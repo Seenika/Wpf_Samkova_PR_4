@@ -24,5 +24,25 @@ namespace Wpf_Samkova_PR_4
         {
             InitializeComponent();
         }
+
+        
+
+        private void Ugaday_Click(object sender, RoutedEventArgs e)
+        {
+            int test = Convert.ToInt32(Chislo.Text);
+
+            if (i == test)
+            {
+                MessageBox.Show("Угадал, возьми с полки пиражок");
+            }
+            else if (i > test)
+            {
+                MessageBox.Show("Маленькое число, попробуй ещё раз");
+            }
+            else if (i < test)
+            {
+                MessageBox.Show("Много хочешь, пробуй ещё");
+            }
+        }
     }
 }

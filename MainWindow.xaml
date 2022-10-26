@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Игра в угадайку чисел" Margin="208,100,208,275" FontSize="36"/>
-        <Label Content="Угадай число от 1 до 100" Margin="302,164,302,233" FontSize="16"/>
-        <TextBox x:Name="Chislo" Margin="299,217,299,173"/>
-        <Button x:Name="Ugaday" Content="Нажми на меня, если вписал число" Margin="278,297,278,105" FontSize="14" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Игра в угадайку чисел" Margin="208,100,0,0" FontSize="36" Height="59" VerticalAlignment="Top" HorizontalAlignment="Left" Width="384"/>
+        <Label Content="Угадай число от 1 до 100" Margin="302,164,0,0" FontSize="16" Height="37" VerticalAlignment="Top" HorizontalAlignment="Left" Width="196"/>
+        <TextBox x:Name="Chislo" Margin="299,217,0,0" Height="44" VerticalAlignment="Top" HorizontalAlignment="Left" Width="202"/>
+        <Button x:Name="Ugaday" Content="Нажми на меня, если вписал число" Margin="278,297,0,0" FontSize="14" RenderTransformOrigin="0.5,0.5" Click="Ugaday_Click" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="244">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
