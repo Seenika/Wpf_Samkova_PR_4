@@ -20,15 +20,19 @@ namespace Wpf_Samkova_PR_4
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random rand = new Random();
+
         public MainWindow()
         {
             InitializeComponent();
+            int i = rand.Next(101);
+
         }
 
-        
 
         private void Ugaday_Click(object sender, RoutedEventArgs e)
         {
+            
             int test = Convert.ToInt32(Chislo.Text);
 
             if (i == test)
@@ -39,10 +43,11 @@ namespace Wpf_Samkova_PR_4
             {
                 MessageBox.Show("Маленькое число, попробуй ещё раз");
             }
-            else if (i < test)
+            else 
             {
                 MessageBox.Show("Много хочешь, пробуй ещё");
             }
+            
         }
     }
 }
