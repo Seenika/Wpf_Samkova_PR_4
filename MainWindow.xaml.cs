@@ -25,14 +25,14 @@ namespace Wpf_Samkova_PR_4
         public MainWindow()
         {
             InitializeComponent();
-            int i = rand.Next(101);
+            
 
         }
 
 
         private void Ugaday_Click(object sender, RoutedEventArgs e)
         {
-            
+            int i = rand.Next(101);
             int test = Convert.ToInt32(Chislo.Text);
 
             if (i == test)
