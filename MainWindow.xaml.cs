@@ -20,22 +20,25 @@ namespace Wpf_Samkova_PR_4
     /// </summary>
     public partial class MainWindow : Window
     {
-        Random rand = new Random();
-
         public MainWindow()
         {
+            Random rand = new Random();
             InitializeComponent();
-            
-
         }
 
+        private void Sgen_Click(object sender, RoutedEventArgs e)
+        {
+            Random rnd = new Random();
+            int i = rnd.Next(101);
+            lab.Text = i.ToString();
+        }
 
         private void Ugaday_Click(object sender, RoutedEventArgs e)
         {
-            int i = rand.Next(101);
+            int i = int.Parse(lab.Text);
             int test = Convert.ToInt32(Chislo.Text);
 
-            if (i == test)
+            if ( i == test)
             {
                 MessageBox.Show("Угадал, возьми с полки пиражок");
             }
@@ -47,7 +50,6 @@ namespace Wpf_Samkova_PR_4
             {
                 MessageBox.Show("Много хочешь, пробуй ещё");
             }
-            
         }
     }
 }
